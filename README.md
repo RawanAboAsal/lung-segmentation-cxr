@@ -28,17 +28,8 @@ The framework is designed to be backbone-independent, supporting various encoder
 
 ## Architecture
 
-Input Image
-     ↓
-CNN Encoder (EfficientNet, MobileNetV2, etc.)
-     ↓
-Spatial Enhancement Module (per skip connection)
-     ↓
-Transformer Attention Module (at bottleneck)
-     ↓
-Decoder + Multi-Scale Fusion
-     ↓
-Final Segmentation Mask
+Input Image → CNN Encoder (EfficientNet, MobileNetV2, etc.) → Spatial Enhancement Module (per skip connection) → Transformer Attention Module (at bottleneck) → Decoder + Multi-Scale Fusion → Final Segmentation Mask
+
 ## Experimental Results
 
 | Model              | Train Accuracy | Train Loss | Training Time | Test Accuracy | Test Loss |
@@ -49,3 +40,8 @@ Final Segmentation Mask
 | DenseNet121       | 98.60%         | 0.0339     | 4.52 min       | 97.90%        | 0.0617    |
 | VGG16             | 98.92%         | 0.0257     | 11.5 min       | 98.04%        | 0.0634    |
 | ResNet34-UNet     | 98.81%         | 0.0286     | 2.22 min       | 98.03%        | 0.0632    |
+## Data Link
+
+- [Shenzhen Chest X-ray Dataset](https://www.kaggle.com/datasets/nih-chest-xrays/data)
+
+
